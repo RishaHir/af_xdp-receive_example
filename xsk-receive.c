@@ -146,7 +146,7 @@ int main(int argc, char **argv)
 	struct xsk_umem_config umem_cfg = {
 		.comp_size = NUM_FRAMES,
 		.fill_size = NUM_FRAMES,
-		.frame_size = getpagesize(),
+		.frame_size = pagesize,
 		.frame_headroom = 0,
 		.flags = 0,
 	};
